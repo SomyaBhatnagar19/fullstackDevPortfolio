@@ -1,0 +1,41 @@
+/* /pages/css/aboutMe.css */
+
+.aboutMe-div {
+  padding: 4rem;
+  box-shadow: 0px 0px 20px #ad56f0
+}
+
+.aboutMe-title {
+  margin-bottom: 3rem;
+  font-size: 3rem;
+  color: #581c87;
+  text-align: center;
+}
+
+#aboutMe-image {
+  max-width: 100%;
+  height: auto;
+  padding: 1rem;
+}
+
+#aboutMe-content {
+  font-size: 18px;
+  line-height: 1.6;
+}
+
+.resume {
+    background-color: #581c87;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+
+.resume:hover {
+    background-color: #7f3ab5;
+}
