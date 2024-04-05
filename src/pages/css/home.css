@@ -1,0 +1,49 @@
+/* /views/pages/Home.css */
+
+.home-div {
+  position: relative;
+  background-image: url("data:image/svg+xml,%3Csvg id='wave' style='transform:rotate(0deg); transition: 0.3s' viewBox='0 0 1440 430' version='1.1' xmlns='http://www.w3.org/2000/svg'%3E%3Cdefs%3E%3ClinearGradient id='sw-gradient-0' x1='0' x2='0' y1='1' y2='0'%3E%3Cstop stop-color='rgba(243, 106, 62, 1)' offset='0%'%3E%3C/stop%3E%3Cstop stop-color='rgba(255, 179, 11, 1)' offset='100%'%3E%3C/stop%3E%3C/linearGradient%3E%3C/defs%3E%3Cpath style='transform:translate(0, 0px); opacity:1' fill='url(%23sw-gradient-0)' d='M0,43L40,57.3C80,72,160,100,240,93.2C320,86,400,43,480,50.2C560,57,640,115,720,150.5C800,186,880,201,960,179.2C1040,158,1120,100,1200,100.3C1280,100,1360,158,1440,179.2C1520,201,1600,186,1680,179.2C1760,172,1840,172,1920,193.5C2000,215,2080,258,2160,286.7C2240,315,2320,330,2400,286.7C2480,244,2560,143,2640,93.2C2720,43,2800,43,2880,78.8C2960,115,3040,186,3120,186.3C3200,186,3280,115,3360,86C3440,57,3520,72,3600,78.8C3680,86,3760,86,3840,136.2C3920,186,4000,287,4080,336.8C4160,387,4240,387,4320,344C4400,301,4480,215,4560,200.7C4640,186,4720,244,4800,258C4880,272,4960,244,5040,236.5C5120,229,5200,244,5280,243.7C5360,244,5440,229,5520,207.8C5600,186,5680,158,5720,143.3L5760,129L5760,430L5720,430C5680,430,5600,430,5520,430C5440,430,5360,430,5280,430C5200,430,5120,430,5040,430C4960,430,4880,430,4800,430C4720,430,4640,430,4560,430C4480,430,4400,430,4320,430C4240,430,4160,430,4080,430C4000,430,3920,430,3840,430C3760,430,3680,430,3600,430C3520,430,3440,430,3360,430C3280,430,3200,430,3120,430C3040,430,2960,430,2880,430C2800,430,2720,430,2640,430C2560,430,2480,430,2400,430C2320,430,2240,430,2160,430C2080,430,2000,430,1920,430C1840,430,1760,430,1680,430C1600,430,1520,430,1440,430C1360,430,1280,430,1200,430C1120,430,1040,430,960,430C880,430,800,430,720,430C640,430,560,430,480,430C400,430,320,430,240,430C160,430,80,430,40,430L0,430Z'%3E%3C/path%3E%3C/svg%3E");
+  background-size: cover;
+  background-position: center;
+}
+
+.home {
+  padding: 3rem;
+}
+
+.text-column {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.image-column {
+  display: flex;
+  align-items: center;
+}
+
+.text-content {
+  text-align: center;
+}
+
+.greeting {
+  font-size: 3rem;
+  font-weight: lighter;
+  margin-top: 2rem;
+}
+
+.name {
+  font-size: 4.5rem;
+  font-weight: bold;
+}
+
+.title {
+  font-size: 3rem;
+  font-weight: lighter;
+  margin-top: 2rem;
+}
+
+.home-image {
+  max-width: 100%;
+  height: auto;
+}
