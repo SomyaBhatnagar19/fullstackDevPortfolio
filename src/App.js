@@ -7,6 +7,8 @@ import Skills from "./pages/skills";
 import Project from "./pages/project";
 import Contact from "./pages/contact";
 import Footer from "./pages/footer";
+import 'animate.css';
+
 
 function App() {
   return (
