@@ -1,57 +1,79 @@
-/* /views/pages/project.js */
-
-import React from "react";
-import { Card, Col, Container, Row } from "react-bootstrap";
-import { CSSTransition } from "react-transition-group";
-// import projectsIcon from '../assets/Projects.png';
-
-const projects = [
-  {
-    title: "React Reserve",
-    subtitle: "MERN Stack",
-    description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium dolore rerum laborum iure enim sint nemo omnis voluptate exercitationem eius?",
-    image: "http://g.recordit.co/nNNbja4q6n.gif",
-    link: "https://reactbootcamp.com",
-  },
-  // Add other projects here
-];
+import React from 'react';
+import { Card, Button, Container } from 'react-bootstrap';
+import resturant1 from '../assets/resturant1.png';
+import login from '../assets/login2.png';
+import generics from '../assets/generics1.png';
+import weather from '../assets/weather1.png';
+import './css/projects.css';
 
 const Projects = () => {
+  const projects = [
+    {
+      name: 'The Generics E-commerce site',
+      image: generics,
+      link: 'https://the-generics-store-cm33bdwqn-somyabhatnagar19s-projects.vercel.app/',
+      description: [
+        'A food ordering cart app, built with ReactJs and ContextAPI, allows users to easily add and manage food items in a cart.',
+        'It features a responsive design and an intuitive interface.',
+        'Potential for future enhancements like order tracking and promotions.'
+      ]
+    },
+    {
+      name: 'Weather Predictor',
+      image: weather,
+      link: 'https://weather-app-mu-lac.vercel.app/',
+      description: [
+        'A food ordering cart app, built with ReactJs and ContextAPI, allows users to easily add and manage food items in a cart.',
+        'It features a responsive design and an intuitive interface.',
+        'Potential for future enhancements like order tracking and promotions.'
+      ]
+    },
+    {
+      name: 'Family Food App',
+      image: resturant1,
+      link: 'https://resturant-project.vercel.app/',
+      description: [
+        'A food ordering cart app, built with ReactJs and ContextAPI, allows users to easily add and manage food items in a cart.',
+        'It features a responsive design and an intuitive interface.',
+        'Potential for future enhancements like order tracking and promotions.'
+      ]
+    },
+    {
+      name: 'ReactAuth',
+      image: login,
+      link: 'https://login-page-app-gamma.vercel.app/',
+      description: [
+        'ReactAuth is a React app utilizing ContextAPI for user authentication, offering login, signup, and logout functionality.',
+        'It includes a session timeout feature and utilizes Firebase for authentication processes.'
+      ]
+    }
+    // Add more projects as needed
+  ];
+
   return (
-    <section id="projects" className="bg-gradient-to-r from-gray-800 to-gray-900 shadow-lg">
-      <Container>
-        <Row className="justify-content-center">
-          <Col className="text-center">
-            <h1 className="mt-4 title-font text-3xl mb-2 font-medium text-green-500 ">
-              Projects
-              {/* <img className="w-24 h-auto mt-6 mb-8" alt="projects-icon" src={projectsIcon} /> */}
-            </h1>
-          </Col>
-        </Row>
-        <Row className="flex flex-wrap">
-          {projects.map((project, index) => (
-            <Col key={index} sm={6} lg={3} className="p-3">
-              <CSSTransition in={true} appear={true} timeout={index * 200} classNames="fade">
-                <Card className="h-100">
-                  <Card.Img variant="top" src={project.image} alt={project.title} />
-                  <Card.Body>
-                    <Card.Title className="text-green-400">{project.subtitle}</Card.Title>
-                    <Card.Title className="text-white">{project.title}</Card.Title>
-                    <Card.Text className="text-gray-300">{project.description}</Card.Text>
-                  </Card.Body>
-                  <Card.Footer>
-                    <a href={project.link} className="btn btn-outline-primary" target="_blank" rel="noopener noreferrer">
-                      View Project
-                    </a>
-                  </Card.Footer>
-                </Card>
-              </CSSTransition>
-            </Col>
-          ))}
-        </Row>
-      </Container>
-    </section>
+    <Container>
+      <h2 className="projects-heading">Projects</h2>
+      <div className="row">
+        {projects.map((project, index) => (
+          <div className="col-md-6 mb-4" key={index}>
+            <Card className="project-card animate__animated animate__fadeIn">
+              <Card.Img variant="top" src={project.image} />
+              <Card.Body>
+                <Card.Title className="project-title">{project.name}</Card.Title>
+                <Card.Text className="project-description">
+                  <ul>
+                    {project.description.map((point, idx) => (
+                      <li key={idx}>{point}</li>
+                    ))}
+                  </ul>
+                </Card.Text>
+                <Button className="project-button" variant="primary" href={project.link} target="_blank">View Site</Button>
+              </Card.Body>
+            </Card>
+          </div>
+        ))}
+      </div>
+    </Container>
   );
 };
 
