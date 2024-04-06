@@ -7,7 +7,7 @@ import womenWorking from "../assets/womenWorking.png";
 
 function Home() {
   return (
-    <div className="home-div">
+    <div className="home-div" id="home">
       <Container>
       <Row className="home">
         <Col xs={12} md={6}>
@@ -15,7 +15,7 @@ function Home() {
             <h3 id="greeting" className="name animate__animated animate__fadeInDown animate__zoomIn">Hi! I'm </h3>
             <h1 id="name" className="name animate__animated animate__fadeInDown animate__zoomIn">Somya Bhatnagar.</h1>
             <h3 id="title" className="name animate__animated animate__fadeInDown animate__zoomIn">A Fullstack Developer.</h3>
-            <Button className="aboutMe-button">About Me</Button>
+            <Button className="aboutMe-button" href="#aboutMe">About Me</Button>
           </div>
         </Col>
         <Col xs={12} md={6}>

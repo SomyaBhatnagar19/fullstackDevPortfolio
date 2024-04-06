@@ -6,7 +6,7 @@ import {Button, Card} from  "react-bootstrap";
 
 function Contact() {
   return (
-    <div className='contact-div'>
+    <div className='contact-div' id='contact'>
     <h1 className="name animate__animated animate__fadeInDown text-center mt-5 mb-4" id="contact-title">Connect with Me</h1>
     <Card className="contact-card">
       <Card.Body>

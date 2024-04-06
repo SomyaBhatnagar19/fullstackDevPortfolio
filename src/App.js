@@ -1,5 +1,6 @@
 /* /src/app.js */
 
+// import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import Menu from "./pages/menu";
 import Home from "./pages/home";
 import AboutMe from "./pages/aboutMe";
@@ -12,7 +13,7 @@ import 'animate.css';
 
 function App() {
   return (
-    <div>
+    <main>
       <Menu />
       <Home />
       <AboutMe />
@@ -20,7 +21,7 @@ function App() {
       <Project />
       <Contact />
       <Footer />
-    </div>
+    </main>
   );
 }
 
