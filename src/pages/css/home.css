@@ -48,3 +48,20 @@
   max-width: 100%;
   height: auto;
 }
+
+.aboutMe-button {
+  background-color: #581c87;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin-top: 2rem;
+  cursor: pointer;
+}
+
+.aboutMe-button:hover {
+  background-color: #7f3ab5;
+}

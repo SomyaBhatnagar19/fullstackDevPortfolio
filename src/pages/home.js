@@ -1,7 +1,7 @@
 /* /pages/home.js */
 
 import React from "react";
-import { Container, Row, Col, Image } from "react-bootstrap";
+import { Container, Row, Col, Image, Button } from "react-bootstrap";
 import "./css/home.css";
 import womenWorking from "../assets/womenWorking.png";
 
@@ -15,6 +15,7 @@ function Home() {
             <h3 id="greeting" className="name animate__animated animate__fadeInDown animate__zoomIn">Hi! I'm </h3>
             <h1 id="name" className="name animate__animated animate__fadeInDown animate__zoomIn">Somya Bhatnagar.</h1>
             <h3 id="title" className="name animate__animated animate__fadeInDown animate__zoomIn">A Fullstack Developer.</h3>
+            <Button className="aboutMe-button">About Me</Button>
           </div>
         </Col>
         <Col xs={12} md={6}>

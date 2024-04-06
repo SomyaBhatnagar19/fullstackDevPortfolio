@@ -1,0 +1,57 @@
+/* /src/pages/css/contact.css */
+
+.contact-div {
+    padding: 3rem;
+    box-shadow: 0px 0px 20px #ad56f0;
+    background-image: url('../../assets/contactBg.jpg');
+    background-size: cover;
+  }
+
+#contact-title {
+  margin-bottom: 2rem;
+  font-size: 2.5rem;
+  color: #343a40; 
+}
+
+.contact-card {
+  max-width: 600px; 
+  margin: 0 auto; 
+}
+
+.contact-card form {
+  padding: 2rem;
+}
+
+.contact-card label {
+  display: block;
+  margin-bottom: 0.5rem;
+}
+
+.contact-card input[type='text'],
+.contact-card input[type='email'],
+.contact-card textarea {
+  width: 100%;
+  padding: 0.5rem;
+  margin-bottom: 1rem;
+  border: 1px solid #ced4da; 
+  border-radius: 5px;
+}
+
+.contact-card textarea {
+  resize: vertical; 
+}
+
+.contact-card button {
+  padding: 0.5rem 2rem;
+  font-size: 1rem;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.contact-card button:hover {
+  background-color: #0056b3; 
+}
+
