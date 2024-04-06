@@ -11,7 +11,7 @@ const projects = [
     subtitle: "MERN Stack",
     description:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium dolore rerum laborum iure enim sint nemo omnis voluptate exercitationem eius?",
-    image: "./project-1.gif",
+    image: "http://g.recordit.co/nNNbja4q6n.gif",
     link: "https://reactbootcamp.com",
   },
   // Add other projects here

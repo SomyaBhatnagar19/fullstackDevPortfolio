@@ -14,39 +14,97 @@
   text-align: center;
 }
 
-/* #skills-row {
-  background-image: url('../../assets/graph.png');
-  background-size: contain; 
-  background-position: center;
-  margin: 3rem;
-} */
-
-.card {
+.skills-card {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  /* padding: 20px; */
-  border: 1px solid #ccc;
+  border: 1px solid #2a0649;
   border-radius: 10px;
-  box-shadow: 0px 0px 15px rgba(16, 14, 14, 0.5);
+  box-shadow: 0px 3px 20px rgba(13, 1, 18, 0.5);
   margin-bottom: 2rem;
   height: 35vh; 
-  background: linear-gradient(90deg, transparent, #c4b5fd);
-  /* overflow: hidden; */
-  transition: transform 0.3s; /* Add transition for transform property */
+  background: linear-gradient( transparent, #89a0d9);
+  transition: transform 0.3s;
+  position: relative;
+  cursor: pointer; 
 }
 
-.card:hover {
-  transform: scale(1.05); /* Zoom in by 5% on hover */
+.skills-card:hover {
+  transform: scale(1.05); 
 }
 
-
-.card-header {
-  background-color: none;
+.skills-card-header {
   font-weight: bold;
   border-bottom: 1px solid #ccc;
   border-radius: 10px 10px 0 0;
 }
 
+#skills-row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
 
+.skills-card-img {
+  width: 50px; 
+  height: 50px; 
+  margin: 5px;
+  transition: transform 0.3s ease; 
+}
+
+.skills-card-img:hover {
+  transform: scale(1.2);
+}
+
+.skills-card:hover::after {
+  content: attr(data-name);
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+  color: white;
+  padding: 5px;
+  border-radius: 0 0 10px 10px;
+  font-size: 12px;
+  text-align: center;
+}
+
+.list-unstyled {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.list-unstyled li {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  margin: 10px;
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+  .card {
+    height: auto; 
+  }
+
+  .card img {
+    width: 40px; 
+    height: 40px;
+  }
+}
+
+@media (max-width: 576px) {
+  .card img {
+    width: 30px; 
+    height: 30px;
+  }
+}
