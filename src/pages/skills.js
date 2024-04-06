@@ -17,7 +17,7 @@ return (
     <Container>
       <h1 className="name animate__animated animate__fadeInDown text-center mt-5 mb-4" id="skills-title">Skills</h1>
       <Row id='skills-row'>
-        <Col>
+        <Col xs={12} md={6} lg={4}>
           <Card id='card1'>
             <Card.Header>
               Languages
@@ -31,7 +31,7 @@ return (
             </Card.Body>
           </Card>
         </Col>
-        <Col>
+        <Col xs={12} md={6} lg={4}>
           <Card id='card2'>
             <Card.Header>
               Frameworks
@@ -45,7 +45,7 @@ return (
             </Card.Body>
           </Card>
         </Col>
-        <Col>
+        <Col xs={12} md={6} lg={4}>
           <Card id='card3'>
             <Card.Header>
               Databases
@@ -60,7 +60,7 @@ return (
           </Card>
         </Col>
      
-        <Col>
+        <Col xs={12} md={6} lg={4}>
           <Card id='card4'>
             <Card.Header>
               Tools
@@ -74,7 +74,7 @@ return (
             </Card.Body>
           </Card>
         </Col>
-        <Col>
+        <Col xs={12} md={6} lg={4}>
           <Card id='card5'>
             <Card.Header>
               Others

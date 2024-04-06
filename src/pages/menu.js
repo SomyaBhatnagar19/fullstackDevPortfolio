@@ -13,7 +13,7 @@ function Menu() {
         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
         <Navbar.Collapse id="responsive-navbar-nav">
           <Nav className="me-auto">
-            <Nav.Link href="#aboutMe">About Me</Nav.Link>
+            <Nav.Link href="/AboutMe">About Me</Nav.Link>
             <Nav.Link href="#skills">Skills</Nav.Link>
             <Nav.Link href="#project">Projects</Nav.Link>
             <Nav.Link href="#contact">Contact</Nav.Link>

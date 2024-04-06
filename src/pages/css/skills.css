@@ -29,7 +29,7 @@
   /* padding: 20px; */
   border: 1px solid #ccc;
   border-radius: 10px;
-  box-shadow: 0px 0px 15px rgba(16, 14, 14, 0.1);
+  box-shadow: 0px 0px 15px rgba(16, 14, 14, 0.5);
   margin-bottom: 2rem;
   height: 35vh; 
   background: linear-gradient(90deg, transparent, #c4b5fd);
