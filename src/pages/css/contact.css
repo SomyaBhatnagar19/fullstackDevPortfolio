@@ -7,10 +7,10 @@
     background-size: cover;
   }
 
-  .contact-title {
+  #contact-title {
     margin-bottom: 3rem;
     font-size: 3rem;
-    color: #581c87;
+    color: #210b31;
     text-align: center;
   }
 
