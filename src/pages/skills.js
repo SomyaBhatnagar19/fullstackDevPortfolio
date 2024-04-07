@@ -57,7 +57,7 @@ function Skills() {
       { name: "Redux", icon: redux },
       { name: "Firebase", icon: firebase },
     ],
-    others: [
+    Others: [
       { name: "C++", icon: c },
       { name: "RestAPI", icon: rest },
     ],
