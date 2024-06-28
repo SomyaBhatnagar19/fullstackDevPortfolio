@@ -2,8 +2,9 @@
 
 import React, {useState} from 'react';
 import './css/menu.css';
-import {Container, Nav, Navbar, Image} from 'react-bootstrap';
+import {Container, Nav, Navbar, Image, Button} from 'react-bootstrap';
 import menuLogo from '../assets/menuLogo.png';
+import resume from '../assets/resume.pdf';
 
 function scrollToSection(event) {
   event.preventDefault();
@@ -40,7 +41,12 @@ function Menu() {
             <Nav.Link href="#contact" onClick={(event) => { scrollToSection(event); handleNavClick(); }}>Contact</Nav.Link>
           </Nav>
           <Nav>
-            <Nav.Link href="#Resume" onClick={(event) => { scrollToSection(event); handleNavClick(); }}>Download Resume</Nav.Link>
+            {/* <Nav.Link href="#Resume" onClick={(event) => { scrollToSection(event); handleNavClick(); }}>Download Resume</Nav.Link> */}
+            <Button className="resume">
+              <a href={resume} download="resume" className="resume-link">
+                My Resume
+              </a>
+            </Button>
           </Nav>
         </Navbar.Collapse>
       </Container>
