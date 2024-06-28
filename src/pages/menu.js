@@ -44,7 +44,7 @@ function Menu() {
             {/* <Nav.Link href="#Resume" onClick={(event) => { scrollToSection(event); handleNavClick(); }}>Download Resume</Nav.Link> */}
             <Button className="resume">
               <a href={resume} download="resume" className="resume-link">
-                My Resume
+                Download Resume
               </a>
             </Button>
           </Nav>
