@@ -2,7 +2,7 @@
 
 import React, {useState} from 'react';
 import './css/menu.css';
-import {Container, Nav, Navbar, Image, Button} from 'react-bootstrap';
+import {Container, Nav, Navbar, Image} from 'react-bootstrap';
 import menuLogo from '../assets/menuLogo.png';
 import resume from '../assets/resume.pdf';
 
@@ -42,11 +42,11 @@ function Menu() {
           </Nav>
           <Nav>
             {/* <Nav.Link href="#Resume" onClick={(event) => { scrollToSection(event); handleNavClick(); }}>Download Resume</Nav.Link> */}
-            <Button>
-              <a href={resume} download="resume"  className="resume">
+            {/* <Button> */}
+              <a href={resume} download="resume"  className="resumes">
                 Download Resume
               </a>
-            </Button>
+            {/* </Button> */}
           </Nav>
         </Navbar.Collapse>
       </Container>

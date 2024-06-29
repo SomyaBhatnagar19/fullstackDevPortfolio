@@ -55,32 +55,17 @@
   }
 } 
 
-button.resume {
-  background-color: #ea7430; /* Background color */
-  border: none; /* Remove borders */
-  color: white; /* Text color */
-  padding: 15px 32px; /* Padding */
-  text-align: center; /* Centered text */
-  display: inline-block; /* Inline-block display */
-  font-size: 16px; /* Font size */
-  margin: 4px 2px; /* Margin */
-  cursor: pointer; /* Pointer cursor on hover */
-  border-radius: 4px; /* Rounded corners */
-  transition: background-color 0.3s, transform 0.3s; /* Smooth transitions */
+.resumes {
+  background-color: rgb(238, 166, 32) ;
+  color: rgb(13, 1, 1);
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 5px;
+  display: inline-block;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
 }
 
-button.resume:hover {
-  background-color: #d08153; /* Darker background on hover */
-  transform: scale(1.05); /* Scale effect on hover */
-}
-
-/* Specific styles for the anchor tag inside the button */
-button.resume a {
-  color: white; /* White text */
-  text-decoration: none; /* Remove underline */
-}
-
-button.resume a:hover {
-  color: white; /* Ensure white text on hover */
-  text-decoration: none; /* Ensure no underline on hover */
+.resumes:hover {
+  background-color: rgb(244, 183, 108);
 }
