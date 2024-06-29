@@ -36,6 +36,11 @@
     cursor: pointer;
 }
 
+.resume-link {
+  text-decoration: none;
+  color: white;
+}
+
 .resume:hover {
     background-color: #7f3ab5;
 }
