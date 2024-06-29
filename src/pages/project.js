@@ -2,6 +2,7 @@ import React from "react";
 import { Card, Button, Container } from "react-bootstrap";
 import resturant1 from "../assets/resturant1.png";
 import login from "../assets/login2.png";
+import chatapp from "../assets/chatapp.png";
 import generics from "../assets/generics1.png";
 import weather from "../assets/weather1.png";
 import mailbox from "../assets/mailbox.png";
@@ -13,17 +14,17 @@ const Projects = () => {
   const projects = [
     {
       name: "Group Chat App",
-      image: mailbox,
-      link: "https://connect-mailbox-client-somyabhatnagar19s-projects.vercel.app/",
+      image: chatapp,
+      link: "https://github.com/SomyaBhatnagar19/GroupChat",
       description: [
-        "Users can compose, reply, forward, and archive emails.",
-        "Users can search and filter emails for easy access.",
-        "App provides real-time updates for new emails and changes.",
-        "Users can send and receive multimedia content in emails.",
+        "Fullstack application with secure authentication.",
+        "Real-time messaging.",
+        "Chat room creation.",
+        "Multimedia sharing using S3 bucket service of AWS.",
         "App offers customization options for the user interface.",
         "Users can securely sign up, log in, and log out.",
         "App is designed to provide a seamless experience across devices.",
-        "Uses React, Redux, Tailwind CSS, uses react-quill library and Firebase, ensuring a modern and efficient user experience.",
+        "Uses JWT, bcrypt, CSS, React Bootstrap, JavaScript, HTML, Node.js, Express.js, Nodemon, MySQL, AWS S3, Sequelize, React.js, Redux ensuring a modern and efficient user experience.",
       ],
     },
     {
