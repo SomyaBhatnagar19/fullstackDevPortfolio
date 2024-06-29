@@ -66,7 +66,7 @@ function Menu() {
               Skills
             </Nav.Link>
             <Nav.Link
-              href="#projects"
+              href="#project"
               onClick={(event) => {
                 scrollToSection(event);
                 handleNavClick();

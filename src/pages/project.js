@@ -118,7 +118,7 @@ const Projects = () => {
   ];
 
   return (
-    <div className="projects-container">
+    <div className="projects-container" id="project">
       <Container>
         <h2 className="projects-heading">Projects</h2>
         <div className="row">
