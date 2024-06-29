@@ -69,3 +69,21 @@
 .resumes:hover {
   background-color: rgb(244, 183, 108);
 }
+
+.social-links {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 10px;
+  margin-left: 1rem;
+}
+
+.social-links a {
+  color: inherit;
+  text-decoration: none;
+  font-size: 30px;
+}
+
+.social-links a:hover {
+  opacity: 0.8;
+}
